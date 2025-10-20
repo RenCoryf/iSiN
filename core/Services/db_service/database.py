@@ -19,9 +19,6 @@ class Database:
 
     @asynccontextmanager
     async def get_session(self):
-        """
-        Асинхронный контекстный менеджер для работы с сессией.
-        """
         async with self.async_sessionmaker() as session:
             try:
                 yield session
@@ -30,4 +27,3 @@ class Database:
                 raise
             else:
                 await session.commit()
-
