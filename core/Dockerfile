@@ -18,4 +18,11 @@ RUN uv sync --locked
 
 COPY . .
 
-CMD ["uv","run","python","-m","bot.main"]
+RUN mkdir -p logs && touch logs/core.log
+
+# RUN pip install uvicorn
+
+# ENV PYTHONPATH="/core:$PYTHONPATH"
+
+#CMD ["python3","-m", "uvicorn", "core.core:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uv", "run", "uvicorn", "core.core:app", "--host", "0.0.0.0", "--port", "8000"]

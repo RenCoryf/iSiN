@@ -1,7 +1,7 @@
 [project]
-name = "isin"
+name = "iSiN"
 version = "0.1.0"
-description = "Add your description here"
+description = "My personal assistant"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -11,6 +11,8 @@ dependencies = [
     "dependency-injector>=4.48.2",
     "dotenv>=0.9.9",
     "fastapi>=0.119.0",
-    "pydantic[settings]>=2.11.10",
+    "psycopg2-binary>=2.9.11",
     "sqlalchemy>=2.0.44",
+    "uuid>=1.30",
+    "uvicorn>=0.38.0",
 ]

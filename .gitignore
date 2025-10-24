@@ -8,5 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
-.env
+.env*
 .python-version
+.ruff*
+ts.txt
+test.py

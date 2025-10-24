@@ -1,0 +1,5 @@
+.venv
+.ruff*
+README.md
+test.py
+ts.txt
